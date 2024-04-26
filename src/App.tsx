@@ -7,7 +7,9 @@ function App() {
         <div className="">
           <NavBar />
         </div>
-        <div className="bg-[#333333] w-[100vw] min-h-[100vh]"></div>
+        <div className="bg-[#333333] w-[100vw] min-h-[100vh]">
+          
+        </div>
       </div>
     </>
   );
