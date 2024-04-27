@@ -35,7 +35,7 @@ export const NavBar = () => {
   }, [windowSize]);
 
   return (
-    <div>
+    <div className="z-50 relative sticky top-0 left-0">
       {openNav ? (
         <nav className="w-[100px] h-[100vh] bg-[#1E1E1E] drop-shadow-xl relative">
           {windowSize < mobileLimit ? (
