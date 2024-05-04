@@ -10,7 +10,7 @@ function App() {
           <NavBar />
         </div>
         <div className="bg-[#333333] w-[100vw]">
-          <div className="h-[100vh] md:pl-16">
+          <div className="h-[100vh] md:pl-16 ">
             <Home />
           </div>
           <div className="h-[100vh]">

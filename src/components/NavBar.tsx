@@ -87,10 +87,14 @@ export const NavBar = () => {
             </div>
             <div className="pt-16">
               <div className="hover:cursor-pointer" onMouseEnter={handleGitHubtHover} onMouseLeave={handleGitHubtHover}>
-                <GithubSVG width={iconSize} height={iconSize} color={gitHubHover ? "#A020F0" : "#fff"} />
+                <a href="https://github.com/Kroplewski-M" target="_blank">
+                  <GithubSVG width={iconSize} height={iconSize} color={gitHubHover ? "#A020F0" : "#fff"} />
+                </a>
               </div>
               <div className="hover:cursor-pointer mt-5" onMouseEnter={handleLinkedintHover} onMouseLeave={handleLinkedintHover}>
-                <LinkedinSVG width={iconSize} height={iconSize} color={linkedinHover ? "#A020F0" : "#fff"} />
+                <a href="https://www.linkedin.com/in/mateusz-kroplewski-732239176/" target="_blank">
+                  <LinkedinSVG width={iconSize} height={iconSize} color={linkedinHover ? "#A020F0" : "#fff"} />
+                </a>
               </div>
             </div>
           </div>

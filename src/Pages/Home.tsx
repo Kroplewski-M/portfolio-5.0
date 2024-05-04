@@ -94,15 +94,15 @@ export const Home = () => {
         }}
       />
       <div className=" w-[100%] h-[100%] z-50 relative pointer-events-none animate-fadeIn">
-        <div className="md:ml-16 pt-16 md:pt-6">
+        <div className="md:ml-16 ml-[5px] pt-16 md:pt-6">
           <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;html &gt;</p>
           <p className="font-dancing text-purple-500 opacity-50 text-[17px] pl-6">&lt;body &gt;</p>
           <div className="pt-6 pl-6">
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 &gt;</p>
-            <h1 className="text-[50px] font-bold text-gray-200 pl-[10px]">
+            <h1 className="text-[50px] font-bold text-gray-200 pl-[10px] leading-tight md:leading-normal">
               Hi,
               <br /> I'm <span className="bg-purple-600 p-[5px] rounded-md">Mateusz,</span>
-              <br /> Web Developer
+              <br /> <span className="text-[35px] md:text-[50px] text-gray-300">Software Developer</span>
             </h1>
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 /&gt;</p>
           </div>
@@ -110,6 +110,9 @@ export const Home = () => {
             <p className="font-dancing text-purple-500 opacity-50 text-[17px] pl-6">&lt;body /&gt;</p>
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;html /&gt;</p>
           </div>
+        </div>
+        <div className="w-[250px] h-[40px] pointer-events-auto hover:cursor-pointer md:pl-16 pl-10 mt-5">
+          <button className="w-[100%] h-[100%] rounded-md border border-2 border-purple-700 text-gray-200 font-bold hover:bg-purple-700">Contact Me!</button>
         </div>
       </div>
       <div className="absolute bottom-0 w-[100vw]">
