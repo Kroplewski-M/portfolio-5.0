@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
+import { DownSVG } from "../SVGs/DownSVG";
 export const Home = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
@@ -92,6 +93,30 @@ export const Home = () => {
           detectRetina: true,
         }}
       />
+      <div className=" w-[100%] h-[100%] z-50 relative pointer-events-none animate-fadeIn">
+        <div className="md:ml-16 pt-16 md:pt-6">
+          <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;html &gt;</p>
+          <p className="font-dancing text-purple-500 opacity-50 text-[17px] pl-6">&lt;body &gt;</p>
+          <div className="pt-6 pl-6">
+            <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 &gt;</p>
+            <h1 className="text-[50px] font-bold text-gray-200 pl-[10px]">
+              Hi,
+              <br /> I'm <span className="bg-purple-600 p-[5px] rounded-md">Mateusz,</span>
+              <br /> Web Developer
+            </h1>
+            <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 /&gt;</p>
+          </div>
+          <div className="mt-5">
+            <p className="font-dancing text-purple-500 opacity-50 text-[17px] pl-6">&lt;body /&gt;</p>
+            <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;html /&gt;</p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bottom-0 w-[100vw]">
+        <div className="w-[50px] mx-auto animate-bounce hover:cursor-pointer">
+          <DownSVG width={50} height={50} color="#A020F0" />
+        </div>
+      </div>
     </section>
   );
 };

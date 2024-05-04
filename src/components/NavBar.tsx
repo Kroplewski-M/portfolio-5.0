@@ -5,6 +5,8 @@ import { HomeSVG } from "../SVGs/HomeSVG";
 import { ProjectsSVG } from "../SVGs/ProjectsSVG";
 import { SkillsSVG } from "../SVGs/SkillsSVG";
 import { BurgerMenuSVG } from "../SVGs/BurgerMenuSVG";
+import { GithubSVG } from "../SVGs/GithubSVG";
+import { LinkedinSVG } from "../SVGs/LinkedinSVG";
 
 export const NavBar = () => {
   const iconSize = 33;
@@ -40,16 +42,21 @@ export const NavBar = () => {
   const [skillsHover, setSkillsHover] = useState(false);
   const [projectsHover, setProjectsHover] = useState(false);
   const [contactHover, setContactHover] = useState(false);
+  const [gitHubHover, setGitHubHover] = useState(false);
+  const [linkedinHover, setLinkedinHover] = useState(false);
 
   const handleHomeHover = () => setHomeHover(!homeHover);
   const handleAboutHover = () => setAboutHover(!aboutHover);
   const handleSkillsHover = () => setSkillsHover(!skillsHover);
   const handleProjectHover = () => setProjectsHover(!projectsHover);
   const handleContactHover = () => setContactHover(!contactHover);
+  const handleGitHubtHover = () => setGitHubHover(!gitHubHover);
+  const handleLinkedintHover = () => setLinkedinHover(!linkedinHover);
+
   return (
-    <div className="z-50 relative sticky top-0 left-0">
+    <div className="z-[100] relative sticky top-0 left-0">
       {openNav ? (
-        <nav className="w-[100px] h-[100vh] bg-[#1E1E1E] drop-shadow-xl relative">
+        <nav className="w-[100px] h-[100vh] bg-[#1E1E1E] drop-shadow-xl absolute">
           {windowSize < mobileLimit ? (
             <>
               <div className="w-[25px] h-[25px] rounded-full bg-gray-100 hover:cursor-pointer absolute -right-2 grid place-content-center" onClick={() => setOpenNav(false)}>
@@ -77,6 +84,14 @@ export const NavBar = () => {
             </div>
             <div className="hover:cursor-pointer" onMouseEnter={handleContactHover} onMouseLeave={handleContactHover}>
               <ContactSVG width={iconSize} height={iconSize} color={contactHover ? "#A020F0" : "#fff"} />
+            </div>
+            <div className="pt-16">
+              <div className="hover:cursor-pointer" onMouseEnter={handleGitHubtHover} onMouseLeave={handleGitHubtHover}>
+                <GithubSVG width={iconSize} height={iconSize} color={gitHubHover ? "#A020F0" : "#fff"} />
+              </div>
+              <div className="hover:cursor-pointer mt-5" onMouseEnter={handleLinkedintHover} onMouseLeave={handleLinkedintHover}>
+                <LinkedinSVG width={iconSize} height={iconSize} color={linkedinHover ? "#A020F0" : "#fff"} />
+              </div>
             </div>
           </div>
         </nav>
