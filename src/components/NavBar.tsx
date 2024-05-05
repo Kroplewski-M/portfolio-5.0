@@ -7,6 +7,7 @@ import { SkillsSVG } from "../SVGs/SkillsSVG";
 import { BurgerMenuSVG } from "../SVGs/BurgerMenuSVG";
 import { GithubSVG } from "../SVGs/GithubSVG";
 import { LinkedinSVG } from "../SVGs/LinkedinSVG";
+import { ExperienceSVG } from "../SVGs/ExperienceSVG";
 
 export const NavBar = () => {
   const iconSize = 33;
@@ -44,6 +45,7 @@ export const NavBar = () => {
   const [contactHover, setContactHover] = useState(false);
   const [gitHubHover, setGitHubHover] = useState(false);
   const [linkedinHover, setLinkedinHover] = useState(false);
+  const [experienceHover, setExperienceHover] = useState(false);
 
   const handleHomeHover = () => setHomeHover(!homeHover);
   const handleAboutHover = () => setAboutHover(!aboutHover);
@@ -52,7 +54,15 @@ export const NavBar = () => {
   const handleContactHover = () => setContactHover(!contactHover);
   const handleGitHubtHover = () => setGitHubHover(!gitHubHover);
   const handleLinkedintHover = () => setLinkedinHover(!linkedinHover);
+  const handleExperiencetHover = () => setExperienceHover(!experienceHover);
 
+  const scrollIntoView = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+    if (windowSize < mobileLimit) {
+      setOpenNav(false);
+    }
+  };
   return (
     <div className="z-[100] relative sticky top-0 left-0">
       {openNav ? (
@@ -66,23 +76,26 @@ export const NavBar = () => {
           ) : (
             <></>
           )}
-          <div className="hover:cursor-pointer">
+          <div className="hover:cursor-pointer" onClick={() => scrollIntoView("home")}>
             <img src="./Logo.png" alt="logo" className="w-[100%]" />
           </div>
           <div className="flex flex-col w-[33px] mx-auto space-y-7 mt-16">
-            <div className="hover:cursor-pointer" onMouseEnter={handleHomeHover} onMouseLeave={handleHomeHover}>
+            <div className="hover:cursor-pointer" onMouseEnter={handleHomeHover} onMouseLeave={handleHomeHover} onClick={() => scrollIntoView("home")}>
               <HomeSVG width={iconSize} height={iconSize} color={homeHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleAboutHover} onMouseLeave={handleAboutHover}>
+            <div className="hover:cursor-pointer" onMouseEnter={handleAboutHover} onMouseLeave={handleAboutHover} onClick={() => scrollIntoView("about")}>
               <AboutSVG width={iconSize} height={iconSize} color={aboutHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleSkillsHover} onMouseLeave={handleSkillsHover}>
+            <div className="hover:cursor-pointer" onMouseEnter={handleExperiencetHover} onMouseLeave={handleExperiencetHover} onClick={() => scrollIntoView("experience")}>
+              <ExperienceSVG width={iconSize} height={iconSize} color={experienceHover ? "#A020F0" : "#fff"} />
+            </div>
+            <div className="hover:cursor-pointer" onMouseEnter={handleSkillsHover} onMouseLeave={handleSkillsHover} onClick={() => scrollIntoView("skills")}>
               <SkillsSVG width={iconSize} height={iconSize} color={skillsHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleProjectHover} onMouseLeave={handleProjectHover}>
+            <div className="hover:cursor-pointer" onMouseEnter={handleProjectHover} onMouseLeave={handleProjectHover} onClick={() => scrollIntoView("projects")}>
               <ProjectsSVG width={iconSize} height={iconSize} color={projectsHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleContactHover} onMouseLeave={handleContactHover}>
+            <div className="hover:cursor-pointer" onMouseEnter={handleContactHover} onMouseLeave={handleContactHover} onClick={() => scrollIntoView("contact")}>
               <ContactSVG width={iconSize} height={iconSize} color={contactHover ? "#A020F0" : "#fff"} />
             </div>
             <div className="pt-16">

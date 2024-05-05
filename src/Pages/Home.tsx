@@ -18,7 +18,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <section className="w-[100%] height-[100vh]">
+    <section className="w-[100%] height-[100vh]" id="home">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -34,7 +34,7 @@ export const Home = () => {
           interactivity: {
             events: {
               onClick: {
-                enable: true,
+                enable: false,
                 mode: "push",
               },
               onHover: {
@@ -93,7 +93,7 @@ export const Home = () => {
           detectRetina: true,
         }}
       />
-      <div className=" w-[100%] h-[100%] z-50 relative pointer-events-none animate-fadeIn">
+      <div className="w-[100%] h-[100%] z-50 relative pointer-events-none animate-fadeIn">
         <div className="md:ml-16 ml-[5px] pt-16 md:pt-6">
           <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;html &gt;</p>
           <p className="font-dancing text-purple-500 opacity-50 text-[17px] pl-6">&lt;body &gt;</p>

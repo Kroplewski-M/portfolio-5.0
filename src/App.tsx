@@ -1,5 +1,9 @@
 import { About } from "./Pages/About";
+import { Contact } from "./Pages/Contact";
+import { Experience } from "./Pages/Experience";
 import { Home } from "./Pages/Home";
+import { Projects } from "./Pages/Projects";
+import { Skills } from "./Pages/Skills";
 import { NavBar } from "./components/NavBar";
 
 function App() {
@@ -13,8 +17,20 @@ function App() {
           <div className="h-[100vh] md:pl-16 ">
             <Home />
           </div>
-          <div className="h-[100vh]">
+          <div className="h-[100vh] md:pl-[100px]">
             <About />
+          </div>
+          <div className="h-[100vh] md:pl-[100px]">
+            <Experience />
+          </div>
+          <div className="h-[100vh] md:pl-[100px]">
+            <Skills />
+          </div>
+          <div className="h-[100vh] md:pl-[100px]">
+            <Projects />
+          </div>
+          <div className="h-[100vh] md:pl-[100px]">
+            <Contact />
           </div>
         </div>
       </div>
