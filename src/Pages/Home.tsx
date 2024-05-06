@@ -4,6 +4,10 @@ import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
 import { DownSVG } from "../SVGs/DownSVG";
 export const Home = () => {
+  const scrollIntoView = (id: string) => {
+    const element = document.getElementById(id);
+    element?.scrollIntoView({ behavior: "smooth" });
+  };
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(engine);
 
@@ -116,7 +120,7 @@ export const Home = () => {
         </div>
       </div>
       <div className="absolute bottom-0 w-[100vw]">
-        <div className="w-[50px] mx-auto animate-bounce hover:cursor-pointer">
+        <div className="w-[50px] mx-auto animate-bounce hover:cursor-pointer" onClick={() => scrollIntoView("about")}>
           <DownSVG width={50} height={50} color="#A020F0" />
         </div>
       </div>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { About } from "./Pages/About";
 import { Contact } from "./Pages/Contact";
 import { Experience } from "./Pages/Experience";
@@ -7,8 +8,26 @@ import { Skills } from "./Pages/Skills";
 import { NavBar } from "./components/NavBar";
 
 function App() {
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const [scrollY, setScrollY] = useState(0);
+  const handleMouseMove = (e: any) => {
+    setCursorPos({ x: e.clientX, y: e.clientY });
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Only run this effect once, on component mount
   return (
-    <>
+    <main onMouseMove={handleMouseMove} onScroll={handleMouseMove}>
+      <div className="cursor bg-[#f0f]/50" style={{ left: cursorPos.x, top: cursorPos.y + scrollY }}></div>
       <div className="flex">
         <div className="">
           <NavBar />
@@ -34,7 +53,7 @@ function App() {
           </div>
         </div>
       </div>
-    </>
+    </main>
   );
 }
 
