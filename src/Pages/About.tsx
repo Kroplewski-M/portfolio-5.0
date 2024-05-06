@@ -21,7 +21,7 @@ export const About = () => {
             </p>
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;p /&gt;</p>
           </div>
-          <div className="w-[200px] h-[200px] mt-5 md:mt-[20px] ml-16">
+          <div className="w-[200px] h-[200px] mt-5 md:mt-[20px] md:ml-16 ml-0">
             <img src="./Profile.jpg" alt="" className="w-[100%] h-[100%] rounded-md" />
           </div>
         </div>
