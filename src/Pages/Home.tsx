@@ -105,7 +105,7 @@ export const Home = () => {
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 &gt;</p>
             <h1 className="text-[50px] font-bold text-gray-200 pl-[10px] leading-tight md:leading-normal">
               Hi,
-              <br /> I'm <span className="bg-purple-600 p-[5px] rounded-md">Mateusz,</span>
+              <br /> I'm <span className="pointer-events-auto bg-purple-600 hover:bg-transparent hover:border-2 hover:cursor-pointer hover:border-purple-600 p-[5px] rounded-md">Mateusz,</span>
               <br /> <span className="text-[35px] md:text-[50px] text-gray-300">Software Developer</span>
             </h1>
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 /&gt;</p>
