@@ -1,0 +1,7 @@
+{
+  "skills": {
+    "frontend": ["HTML", "CSS", "TailwindCSS", "Bootstrap", "JavaScript", "TypeScript", "React", "Blazor", "Razor Pages"],
+    "backend": ["Node.js", "Supabase", "Firebase", "SQL", "C#", "ASP.NET Core"]
+  },
+  "projects": {}
+}

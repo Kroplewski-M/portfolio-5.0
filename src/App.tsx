@@ -42,7 +42,7 @@ function App() {
           <div className="h-[100vh] md:pl-[100px]">
             <Experience />
           </div>
-          <div className="h-[100vh] md:pl-[100px]">
+          <div className="min-h-[100vh] md:pl-[100px]">
             <Skills />
           </div>
           <div className="h-[100vh] md:pl-[100px]">
