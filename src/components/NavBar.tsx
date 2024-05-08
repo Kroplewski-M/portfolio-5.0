@@ -69,43 +69,43 @@ export const NavBar = () => {
         <nav className="w-[100px] h-[100vh] bg-[#1E1E1E] drop-shadow-xl absolute">
           {windowSize < mobileLimit ? (
             <>
-              <div className="w-[25px] h-[25px] rounded-full bg-gray-100 hover:cursor-pointer absolute -right-2 grid place-content-center" onClick={() => setOpenNav(false)}>
+              <div className="w-[25px] h-[25px] rounded-full bg-gray-100 pointer absolute -right-2 grid place-content-center" onClick={() => setOpenNav(false)}>
                 <p className="font-bold">X</p>
               </div>
             </>
           ) : (
             <></>
           )}
-          <div className="hover:cursor-pointer" onClick={() => scrollIntoView("home")}>
+          <div className="pointer" onClick={() => scrollIntoView("home")}>
             <img src="./Logo.png" alt="logo" className="w-[100%]" />
           </div>
           <div className="flex flex-col w-[33px] mx-auto space-y-7 mt-16">
-            <div className="hover:cursor-pointer" onMouseEnter={handleHomeHover} onMouseLeave={handleHomeHover} onClick={() => scrollIntoView("home")}>
+            <div className="pointer" onMouseEnter={handleHomeHover} onMouseLeave={handleHomeHover} onClick={() => scrollIntoView("home")}>
               <HomeSVG width={iconSize} height={iconSize} color={homeHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleAboutHover} onMouseLeave={handleAboutHover} onClick={() => scrollIntoView("about")}>
+            <div className="pointer" onMouseEnter={handleAboutHover} onMouseLeave={handleAboutHover} onClick={() => scrollIntoView("about")}>
               <AboutSVG width={iconSize} height={iconSize} color={aboutHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleExperiencetHover} onMouseLeave={handleExperiencetHover} onClick={() => scrollIntoView("experience")}>
+            <div className="pointer" onMouseEnter={handleExperiencetHover} onMouseLeave={handleExperiencetHover} onClick={() => scrollIntoView("experience")}>
               <ExperienceSVG width={iconSize} height={iconSize} color={experienceHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleSkillsHover} onMouseLeave={handleSkillsHover} onClick={() => scrollIntoView("skills")}>
+            <div className="pointer" onMouseEnter={handleSkillsHover} onMouseLeave={handleSkillsHover} onClick={() => scrollIntoView("skills")}>
               <SkillsSVG width={iconSize} height={iconSize} color={skillsHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleProjectHover} onMouseLeave={handleProjectHover} onClick={() => scrollIntoView("projects")}>
+            <div className="pointer" onMouseEnter={handleProjectHover} onMouseLeave={handleProjectHover} onClick={() => scrollIntoView("projects")}>
               <ProjectsSVG width={iconSize} height={iconSize} color={projectsHover ? "#A020F0" : "#fff"} />
             </div>
-            <div className="hover:cursor-pointer" onMouseEnter={handleContactHover} onMouseLeave={handleContactHover} onClick={() => scrollIntoView("contact")}>
+            <div className="pointer" onMouseEnter={handleContactHover} onMouseLeave={handleContactHover} onClick={() => scrollIntoView("contact")}>
               <ContactSVG width={iconSize} height={iconSize} color={contactHover ? "#A020F0" : "#fff"} />
             </div>
             <div className="pt-16">
-              <div className="hover:cursor-pointer" onMouseEnter={handleGitHubtHover} onMouseLeave={handleGitHubtHover}>
-                <a href="https://github.com/Kroplewski-M" target="_blank">
+              <div className="" onMouseEnter={handleGitHubtHover} onMouseLeave={handleGitHubtHover}>
+                <a href="https://github.com/Kroplewski-M" className="pointer" target="_blank">
                   <GithubSVG width={iconSize} height={iconSize} color={gitHubHover ? "#A020F0" : "#fff"} />
                 </a>
               </div>
-              <div className="hover:cursor-pointer mt-5" onMouseEnter={handleLinkedintHover} onMouseLeave={handleLinkedintHover}>
-                <a href="https://www.linkedin.com/in/mateusz-kroplewski-732239176/" target="_blank">
+              <div className=" mt-5" onMouseEnter={handleLinkedintHover} onMouseLeave={handleLinkedintHover}>
+                <a href="https://www.linkedin.com/in/mateusz-kroplewski-732239176/" className="pointer" target="_blank">
                   <LinkedinSVG width={iconSize} height={iconSize} color={linkedinHover ? "#A020F0" : "#fff"} />
                 </a>
               </div>
@@ -114,7 +114,7 @@ export const NavBar = () => {
         </nav>
       ) : (
         <div className="absolute top-5 left-2">
-          <div className="hover:cursor-pointer" onClick={() => setOpenNav(true)}>
+          <div className="pointer" onClick={() => setOpenNav(true)}>
             <BurgerMenuSVG width={iconSize} height={iconSize} color="#fff" />
           </div>
         </div>

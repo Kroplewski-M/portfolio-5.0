@@ -17,3 +17,9 @@
   opacity: 0.5;
   pointer-events: none;
 }
+body {
+  cursor: url("./cursor.svg"), auto;
+}
+.pointer {
+  cursor: url("./pointer.svg"), auto;
+}

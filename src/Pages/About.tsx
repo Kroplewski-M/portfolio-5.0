@@ -14,7 +14,7 @@ export const About = () => {
               <a
                 href="https://www.linkedin.com/company/ascendant-solutions-limited/mycompany/verification/"
                 target="_blank"
-                className="bg-purple-700 p-[5px] rounded-md hover:cursor-pointer hover:bg-transparent hover:border-2 hover:border-purple-700"
+                className="bg-purple-700 p-[5px] rounded-md pointer hover:bg-transparent hover:border-2 hover:border-purple-700"
               >
                 Ascendant Solutions.
               </a>

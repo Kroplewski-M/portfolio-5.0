@@ -19,7 +19,7 @@ export const Skills = () => {
             </div>
             <div className="flex flex-row flex-wrap">
               {projects.skills.frontend.map((skill, index) => (
-                <div key={index} className="p-5 rounded-md bg-purple-700 mt-[10px] ml-[15px] shadow-xl hover:cursor-pointer hover:purple-500 hover:scale-110">
+                <div key={index} className="p-5 rounded-md bg-purple-700 mt-[10px] ml-[15px] shadow-xl pointer hover:purple-500 hover:scale-110">
                   <p className="text-gray-200 font-bold">{skill}</p>
                 </div>
               ))}
@@ -33,7 +33,7 @@ export const Skills = () => {
             </div>
             <div className="flex flex-wrap mr-10 md:p-0">
               {projects.skills.backend.map((skill, index) => (
-                <div key={index} className="p-5 rounded-md bg-purple-700 mt-[10px] ml-[15px] shadow-xl hover:cursor-pointer hover:purple-500 hover:scale-110">
+                <div key={index} className="p-5 rounded-md bg-purple-700 mt-[10px] ml-[15px] shadow-xl pointer hover:purple-500 hover:scale-110">
                   <p className="text-gray-200 font-bold">{skill}</p>
                 </div>
               ))}

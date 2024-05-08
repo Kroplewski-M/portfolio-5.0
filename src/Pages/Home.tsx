@@ -105,7 +105,7 @@ export const Home = () => {
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 &gt;</p>
             <h1 className="text-[50px] font-bold text-gray-200 pl-[10px] leading-tight md:leading-normal">
               Hi,
-              <br /> I'm <span className="pointer-events-auto bg-purple-600 hover:bg-transparent hover:border-2 hover:cursor-pointer hover:border-purple-600 p-[5px] rounded-md">Mateusz,</span>
+              <br /> I'm <span className="pointer-events-auto bg-purple-600 hover:bg-transparent hover:border-2 pointer hover:border-purple-600 p-[5px] rounded-md">Mateusz,</span>
               <br /> <span className="text-[35px] md:text-[50px] text-gray-300">Software Developer</span>
             </h1>
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 /&gt;</p>
@@ -115,12 +115,12 @@ export const Home = () => {
             <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;html /&gt;</p>
           </div>
         </div>
-        <div className="w-[250px] h-[40px] pointer-events-auto hover:cursor-pointer md:pl-16 pl-10 mt-5">
-          <button className="w-[100%] h-[100%] rounded-md border border-2 border-purple-700 text-gray-200 font-bold hover:bg-purple-700">Contact Me!</button>
+        <div className="w-[250px] h-[40px] md:pl-16 pl-10 mt-5">
+          <button className="w-[100%] h-[100%] pointer-events-auto pointer rounded-md border border-2 border-purple-700 text-gray-200 font-bold hover:bg-purple-700">Contact Me!</button>
         </div>
       </div>
       <div className="absolute bottom-0 w-[100vw]">
-        <div className="w-[50px] mx-auto animate-bounce hover:cursor-pointer" onClick={() => scrollIntoView("about")}>
+        <div className="w-[50px] mx-auto animate-bounce pointer" onClick={() => scrollIntoView("about")}>
           <DownSVG width={50} height={50} color="#A020F0" />
         </div>
       </div>
