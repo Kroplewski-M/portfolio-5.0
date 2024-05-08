@@ -27,28 +27,28 @@ function App() {
   }, []); // Only run this effect once, on component mount
   return (
     <main onMouseMove={handleMouseMove} onScroll={handleMouseMove}>
-      <div className="cursor bg-[#f0f]/50" style={{ left: cursorPos.x, top: cursorPos.y + scrollY }}></div>
+      <div className="cursor bg-[#f0f]/50 hidden md:inline" style={{ left: cursorPos.x, top: cursorPos.y + scrollY }}></div>
       <div className="flex">
         <div className="">
           <NavBar />
         </div>
         <div className="bg-[#333333] w-[100vw]">
-          <div className="h-[100vh] md:pl-16 ">
+          <div className="min-h-[100vh] md:pl-16 ">
             <Home />
           </div>
-          <div className="h-[100vh] md:pl-[100px]">
+          <div className="min-h-[100vh] md:pl-[100px]">
             <About />
           </div>
-          <div className="h-[100vh] md:pl-[100px]">
+          <div className="min-h-[100vh] md:pl-[100px]">
             <Experience />
           </div>
           <div className="min-h-[100vh] md:pl-[100px]">
             <Skills />
           </div>
-          <div className="h-[100vh] md:pl-[100px]">
+          <div className="min-h-[100vh] md:pl-[100px]">
             <Projects />
           </div>
-          <div className="h-[100vh] md:pl-[100px]">
+          <div className="min-h-[100vh] md:pl-[100px]">
             <Contact />
           </div>
         </div>

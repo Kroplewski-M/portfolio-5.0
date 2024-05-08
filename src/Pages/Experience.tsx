@@ -1,6 +1,6 @@
 export const Experience = () => {
   return (
-    <section className="w-[100%] h-[100%] z-[20] bg-[#333333] relative pt-16" id="experience">
+    <section className="w-[100%] h-[100%] z-[20] bg-[#333333] min-h-[100vh] relative pt-16" id="experience">
       <div className="w-[100%] h-[100%] z-50 relative pt-5 md:pl-16 px-6">
         <h1 className="text-[50px] font-bold text-gray-200">
           <span className="bg-purple-600 p-[7px] rounded-md">Experience</span>

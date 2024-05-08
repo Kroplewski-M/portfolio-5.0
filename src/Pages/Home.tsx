@@ -22,7 +22,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <section className="w-[100%] height-[100vh]" id="home">
+    <section className="w-[100%] min-height-[100vh]" id="home">
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -116,7 +116,12 @@ export const Home = () => {
           </div>
         </div>
         <div className="w-[250px] h-[40px] md:pl-16 pl-10 mt-5">
-          <button className="w-[100%] h-[100%] pointer-events-auto pointer rounded-md border border-2 border-purple-700 text-gray-200 font-bold hover:bg-purple-700">Contact Me!</button>
+          <button
+            className="w-[100%] h-[100%] pointer-events-auto pointer rounded-md border border-2 border-purple-700 text-gray-200 font-bold hover:bg-purple-700"
+            onClick={() => scrollIntoView("contact")}
+          >
+            Contact Me!
+          </button>
         </div>
       </div>
       <div className="absolute bottom-0 w-[100vw]">
