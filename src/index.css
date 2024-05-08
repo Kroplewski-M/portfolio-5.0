@@ -19,7 +19,28 @@
 }
 body {
   cursor: url("./cursor.svg"), auto;
+  overflow-x: hidden;
 }
 .pointer {
   cursor: url("./pointer.svg"), auto;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4b4a4a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9c15b8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #640e75;
 }
