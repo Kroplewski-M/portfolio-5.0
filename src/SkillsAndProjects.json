@@ -3,5 +3,68 @@
     "frontend": ["HTML", "CSS", "TailwindCSS", "Bootstrap", "JavaScript", "TypeScript", "React", "Blazor", "Razor Pages"],
     "backend": ["Node.js", "Supabase", "Firebase", "SQL", "C#", "ASP.NET Core"]
   },
-  "projects": {}
+  "projects": 
+    [
+      [{
+        "name": "Crepz",
+        "brief": "eCommerce Shoe Website",
+        "description": "Crepz is an eCommerce shoe website, built with React TypeScript, Tailwind CSS, and Supabase. It offers a vast collection of trendy shoes from top brands. The user-friendly interface allows seamless navigation and browsing. With a personalized wishlist and basket, users can easily track their favorite products and complete checkouts.",
+        "tech": ["TailwindCSS", "React", "TypeScript", "Supabase"],
+        "Github": "https://github.com/Kroplewski-M/Crepz",
+        "Website": "https://crepz.vercel.app/",
+        "images": [""],
+        "video": ""
+      }],
+      [{
+        "name": "Talkrr",
+        "brief": "Messaging web app",
+        "description": "Talkrr is a Real-Time Messaging App. Its a cutting-edge communication platform that seamlessly connects users through instant messaging, user registration, and advanced user search capabilities. Built using React with TypeScript for a robust and intuitive front-end, and powered by Firebase for the backend, this app provides a secure, efficient, and enjoyable messaging experience.",
+        "tech": ["React","TypeScript","Tailwind CSS","Firebase"],
+        "Github": "https://github.com/Kroplewski-M/Talkrr",
+        "Website": "https://talkrr-mu.vercel.app/",
+        "images": [""],
+        "video": ""
+      }],
+      [{
+        "name": "Design A Bear",
+        "brief": "eCommerce Teddy Bear Website",
+        "description": "Talkrr is a Real-Time Messaging App. Its a cutting-edge communication platform that seamlessly connects users through instant messaging, user registration, and advanced user search capabilities. Built using React with TypeScript for a robust and intuitive front-end, and powered by Firebase for the backend, this app provides a secure, efficient, and enjoyable messaging experience.",
+        "tech": ["Blazor","Bootstrap","Entity Framework", "SQL Server","C#"],
+        "Github": "https://github.com/Kroplewski-M/Blazor_Design_A_Bear",
+        "Website": "",
+        "images": [""],
+        "video": ""
+      }],
+      [{
+        "name": "Project Flow",
+        "brief": "eCommerce Teddy Bear Website",
+        "description": "Talkrr is a Real-Time Messaging App. Its a cutting-edge communication platform that seamlessly connects users through instant messaging, user registration, and advanced user search capabilities. Built using React with TypeScript for a robust and intuitive front-end, and powered by Firebase for the backend, this app provides a secure, efficient, and enjoyable messaging experience.",
+        "tech": ["ASP.NET MVC","Bootstrap","Entity Framework", "SQL Server","C#"],
+        "Github": "https://github.com/Kroplewski-M/ProjectFlow",
+        "Website": "",
+        "images": [""],
+        "video": ""
+      }],
+      [{
+        "name": "Enigma Machine",
+        "brief": "eCommerce Teddy Bear Website",
+        "description": "Talkrr is a Real-Time Messaging App. Its a cutting-edge communication platform that seamlessly connects users through instant messaging, user registration, and advanced user search capabilities. Built using React with TypeScript for a robust and intuitive front-end, and powered by Firebase for the backend, this app provides a secure, efficient, and enjoyable messaging experience.",
+        "tech": ["Blazor","Bootstrap","C#"],
+        "Github": "https://github.com/Kroplewski-M/BlazorEnigma",
+        "Website": "https://blazorenigmaweb.azurewebsites.net/",
+        "images": [""],
+        "video": ""
+      }],
+      [{
+        "name": "Mango Mayhem",
+        "brief": "eCommerce Teddy Bear Website",
+        "description": "Talkrr is a Real-Time Messaging App. Its a cutting-edge communication platform that seamlessly connects users through instant messaging, user registration, and advanced user search capabilities. Built using React with TypeScript for a robust and intuitive front-end, and powered by Firebase for the backend, this app provides a secure, efficient, and enjoyable messaging experience.",
+        "tech": ["React","TypeScript","Tailwind CSS","Firebase"],
+        "Github": "https://github.com/Kroplewski-M/MangoMahem",
+        "Website": "https://mango-mayhem.vercel.app/",
+        "images": [""],
+        "video": ""
+      }]
+    ]
+  
 }
