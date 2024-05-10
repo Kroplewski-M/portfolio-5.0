@@ -1,8 +1,8 @@
 import { useState } from "react";
-import projectsInfo from "../SkillsAndProjects.json";
+import skillsinfo from "../SkillsAndProjects.json";
 
 export const Skills = () => {
-  const [projects] = useState(projectsInfo);
+  const [skills] = useState(skillsinfo);
 
   return (
     <section className="w-[100%] min-h-[100vh] pb-10 md:p-16 z-[20] bg-[#222222] relative" id="skills">
@@ -18,7 +18,7 @@ export const Skills = () => {
               <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 /&gt;</p>
             </div>
             <div className="flex flex-row flex-wrap">
-              {projects.skills.frontend.map((skill, index) => (
+              {skills.skills.frontend.map((skill, index) => (
                 <div key={index} className="p-5 xl:p-10 rounded-md bg-purple-700 mt-[10px] ml-[15px] shadow-xl pointer hover:purple-500 hover:scale-110">
                   <p className="text-gray-200 xl:text-[20px] font-bold">{skill}</p>
                 </div>
@@ -32,7 +32,7 @@ export const Skills = () => {
               <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;h1 /&gt;</p>
             </div>
             <div className="flex flex-wrap mr-10 md:p-0">
-              {projects.skills.backend.map((skill, index) => (
+              {skills.skills.backend.map((skill, index) => (
                 <div key={index} className="p-5 xl:p-10 rounded-md bg-purple-700 mt-[10px] ml-[15px] shadow-xl pointer hover:purple-500 hover:scale-110">
                   <p className="text-gray-200 xl:text-[20px] font-bold">{skill}</p>
                 </div>
