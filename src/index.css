@@ -18,11 +18,11 @@
   pointer-events: none;
 }
 body {
-  cursor: url("./cursor.svg"), auto;
+  cursor: url("./cursor.svg"), default;
   overflow-x: hidden;
 }
 .pointer {
-  cursor: url("./pointer.svg"), auto;
+  cursor: url("./pointer.svg"), default;
 }
 
 /* width */
@@ -43,4 +43,9 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #640e75;
+}
+/* hightlight */
+::selection {
+  color: white;
+  background: #bc3fd5;
 }
