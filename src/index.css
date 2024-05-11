@@ -18,11 +18,7 @@
   pointer-events: none;
 }
 body {
-  cursor: url("./cursor.svg"), default;
   overflow-x: hidden;
-}
-.pointer {
-  cursor: url("./pointer.svg"), default;
 }
 
 /* width */
