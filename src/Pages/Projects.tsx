@@ -30,7 +30,7 @@ export const Projects = () => {
           <span className="bg-purple-600 p-[7px] rounded-md">Projects</span>
         </h1>
         <div className="flex flex-col md:flex-row md:flex-wrap mt-10">
-          {projects.map((project: Project, index) => (
+          {projects.map((project: Project) => (
             <div className="w-[90%] mx-auto  md:mr-5 md:w-[400px] mt-5 bg-[#222222] rounded-md" key={project.name}>
               <img src={getImgSrc(`/Projects/${project.name}/${project.name}01.png`)} alt={project.name} className="w-[100%] h-[200px] rounded-t-md" />
               <p className="font-bold text-purple-700 pl-[10px] text-[22px] pt-5">{project.name}</p>
