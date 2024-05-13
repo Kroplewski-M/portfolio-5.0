@@ -31,7 +31,7 @@ export const Projects = () => {
         </h1>
         <div className="flex flex-col md:flex-row md:flex-wrap mt-10">
           {projects.map((project: Project) => (
-            <div className="w-[90%] mx-auto  md:mr-5 md:w-[400px] mt-5 bg-[#222222] rounded-md" key={project.name}>
+            <div className="w-[90%] md:mr-5 mx-auto md:mx-0 md:w-[400px] mt-5 bg-[#222222] rounded-md" key={project.name}>
               <img src={getImgSrc(`/Projects/${project.name}/${project.name}01.png`)} alt={project.name} className="w-[100%] h-[200px] rounded-t-md" />
               <p className="font-bold text-purple-700 pl-[10px] text-[22px] pt-5">{project.name}</p>
               <p className="text-gray-400 pl-[10px] pt-[5px]">{project.brief}</p>
