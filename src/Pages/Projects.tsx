@@ -23,6 +23,7 @@ export const Projects = () => {
   const getImgSrc = (src: string) => {
     return new URL(src, import.meta.url).href;
   };
+
   return (
     <section className="w-[100%] min-h-[100vh] pb-5 z-[20] bg-[#333333] relative" id="projects">
       <div className="w-[100%] z-50 relative pt-5 md:pl-16 pl-6">
