@@ -11,23 +11,28 @@ export const Contact = () => {
                     <p>Or you can fill out the form below!</p>
                 </div>
                 <div className="mt-6">
+                <p className="font-dancing text-purple-500 opacity-50 text-[17px]">&lt;form &gt;</p>
                     <form>
-                        {/*<p className="font-bold text-gray-200 text-[40px]">Form</p>*/}
-                        <div className="flex">
-                            <label>Name:</label>
-                            <input type="text" />
+                        <div className="flex flex-col">
+                            <label className="text-gray-400 font-bold text-[30px] ">Name:</label>
+                            <input type="text" className="w-[80%] md:w-[300px] h-[35px] rounded-md bg-[#333333] border-b-2 border-b-purple-700 pl-[10px] font-semibold text-purple-500 focus:outline-none"
+                                   placeholder="John Doe" />
                         </div>
-                        <div className="flex">
-                            <label>Email:</label>
-                            <input type="email" />
+                        <div className="flex flex-col mt-[10px]">
+                            <label className="text-gray-400 font-bold text-[30px] ">Email:</label>
+                            <input type="email" className="w-[80%] md:w-[300px] h-[35px] rounded-md bg-[#333333] border-b-2 border-b-purple-700 pl-[10px] font-semibold text-purple-500 focus:outline-none"
+                                placeholder="JohnDoe@gmail.com" />
                         </div>
-                        <div className="flex">
-                            <label>Message:</label>
-                            <input type="text" />
+                        <div className="flex flex-col mt-[10px]">
+                            <label className="text-gray-400 font-bold text-[30px] ">Message:</label>
+                            <textarea placeholder="hey..."
+                                className="w-[80%] md:w-[300px] h-[100px] rounded-md bg-[#333333] border-b-2 border-b-purple-700 pl-[10px] font-semibold text-purple-500 focus:outline-none"
+                                 />
                         </div>
-                        <div>
-                            <button>Send</button>
+                        <div className="w-[200px] h-[35px] mt-5">
+                            <button className="w-[100%] h-[100%] rounded-md bg-purple-500 font-bold text-gray-200 hover:cursor-pointer hover:bg-purple-700">Send</button>
                         </div>
+                        <p className="font-dancing text-purple-500 opacity-50 text-[17px] mt-[10px]">&lt;form /&gt;</p>
                     </form>
                 </div>
             </div>
