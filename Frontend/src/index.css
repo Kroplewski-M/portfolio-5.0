@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#tsparticles {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+.cursor {
+  position: absolute;
+  z-index: 200;
+  width: 1px;
+  height: 1px;
+  border-radius: 50%;
+  box-shadow: 0 0 100px 60px #f0f, /* middle magenta */ 0 0 140px 90px #0ff; /* outer cyan */
+  opacity: 0.5;
+  pointer-events: none;
+}
+body {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #4b4a4a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #9c15b8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #640e75;
+}
+/* hightlight */
+::selection {
+  color: white;
+  background: #bc3fd5;
+}
