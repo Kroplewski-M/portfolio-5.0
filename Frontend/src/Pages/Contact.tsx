@@ -30,11 +30,13 @@ export const Contact = () => {
 
   const onSubmit = handleSubmit(async (data) => {
     try {
+      console.log("sending email...", data);
       const response = await axios.post("http://localhost:3001/send-email", {
         Email: data.Email,
         Name: data.Name,
         Message: data.Message,
       });
+      console.log("Response status:", response.status);
       if (response.status === 200) {
         console.log("Email sent successfully!");
       } else {
@@ -43,7 +45,6 @@ export const Contact = () => {
     } catch (e) {
       console.log(e);
     }
-    console.log(data);
   });
 
   return (

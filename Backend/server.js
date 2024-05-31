@@ -43,13 +43,10 @@ app.post("/send-email", (req, res) => {
   });
   request
     .then((result) => {
-      console.log("success");
-      console.log(request);
-      console.log(result.body);
+      res.status(200).send(result.body);
     })
     .catch((err) => {
-      console.log("error");
-      console.log(err.statusCode);
+      res.status(500).send(err.statusCode);
     });
 });
 
