@@ -1,4 +1,5 @@
 import { useForm, Resolver } from "react-hook-form";
+import axios from "axios";
 
 type FormValues = {
   Name: string;
@@ -26,7 +27,24 @@ export const Contact = () => {
     handleSubmit,
     formState: { errors },
   } = useForm<FormValues>({ resolver });
-  const onSubmit = handleSubmit((data) => console.log(data));
+
+  const onSubmit = handleSubmit(async (data) => {
+    try {
+      const response = await axios.post("http://localhost:3001/send-email", {
+        Email: data.Email,
+        Name: data.Name,
+        Message: data.Message,
+      });
+      if (response.status === 200) {
+        console.log("Email sent successfully!");
+      } else {
+        console.log("Failed to send email.");
+      }
+    } catch (e) {
+      console.log(e);
+    }
+    console.log(data);
+  });
 
   return (
     <section className="w-[100%] min-h-[100vh] z-[20] bg-[#222222] relative pt-5" id="contact">
