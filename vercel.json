@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "name": "portfolio-frontend",
+      "root": "./Frontend",
+      "buildCommand": "npm run build",
+      "outputDirectory": "build",
+      "framework": "vite"
+    },
+    {
+      "name": "portfolio-server",
+      "root": "./server",
+      "buildCommand": "",
+      "startCommand": "node server.js",
+      "outputDirectory": ""
+    }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/server/$1" },
+    { "src": "/(.*)", "dest": "/frontend/$1" }
+  ]
+}

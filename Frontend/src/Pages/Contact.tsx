@@ -33,7 +33,7 @@ export const Contact = () => {
   const onSubmit = handleSubmit(async (data) => {
     try {
       PushNotification("Sending email...", "bg-info");
-      const response = await axios.post("http://localhost:3001/send-email", {
+      const response = await axios.post("http://localhost:3001/api/send-email", {
         Email: data.Email,
         Name: data.Name,
         Message: data.Message,

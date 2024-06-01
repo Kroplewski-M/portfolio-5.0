@@ -16,7 +16,7 @@ app.use(
 );
 app.use(bodyParser.json());
 
-app.post("/send-email", (req, res) => {
+app.post("/api/send-email", (req, res) => {
   const { Email, Name, Message } = req.body;
 
   const request = mailjet.post("send", { version: "v3.1" }).request({
