@@ -1,22 +1,17 @@
 {
-  "projects": [
+  "builds": [
     {
-      "name": "portfolio-frontend",
-      "root": "./Frontend",
-      "buildCommand": "npm run build",
-      "outputDirectory": "build",
-      "framework": "vite"
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "frontend/dist" }
     },
     {
-      "name": "portfolio-server",
-      "root": "./server",
-      "buildCommand": "",
-      "startCommand": "node server.js",
-      "outputDirectory": ""
+      "src": "server/server.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "/server/$1" },
-    { "src": "/(.*)", "dest": "/frontend/$1" }
+    { "src": "/api/(.*)", "dest": "/server/server.js" },
+    { "src": "/(.*)", "dest": "/frontend/dist/$1" }
   ]
 }
