@@ -1,5 +1,6 @@
 import { useForm, Resolver } from "react-hook-form";
 import axios from "axios";
+import { useNotificationsInfo } from "../Context/NotificationsContext";
 
 type FormValues = {
   Name: string;
@@ -22,6 +23,7 @@ const resolver: Resolver<FormValues> = async (values) => {
   };
 };
 export const Contact = () => {
+  const { PushNotification } = useNotificationsInfo();
   const {
     register,
     handleSubmit,
@@ -30,20 +32,17 @@ export const Contact = () => {
 
   const onSubmit = handleSubmit(async (data) => {
     try {
-      console.log("sending email...", data);
+      PushNotification("Sending email...", "bg-info");
       const response = await axios.post("http://localhost:3001/send-email", {
         Email: data.Email,
         Name: data.Name,
         Message: data.Message,
       });
-      console.log("Response status:", response.status);
       if (response.status === 200) {
-        console.log("Email sent successfully!");
-      } else {
-        console.log("Failed to send email.");
+        PushNotification("Email sent successfully!...", "bg-success");
       }
     } catch (e) {
-      console.log(e);
+      PushNotification("Failed to send email", "bg-error");
     }
   });
 

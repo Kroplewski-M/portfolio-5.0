@@ -16,6 +16,11 @@ export default {
         dancing: ["Dancing Script", "cursive"], // Use Dancing Script as the cursive font
         spartan: ["League Spartan", "sans-serif"], // Use League Spartan as the default sans-serif font
       },
+      colors: {
+        success: "#097969",
+        error: "#880808",
+        info: "#B2BEB5",
+      },
     },
   },
   plugins: [],
